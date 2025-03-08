@@ -42,21 +42,20 @@ document.addEventListener("DOMContentLoaded", function () {
     fechar.addEventListener("click", fecharModal);
     fechar.addEventListener("touchstart", fecharModal);
 });
-// Espera até que o conteúdo da página seja carregado
 document.addEventListener("DOMContentLoaded", function() {
-    // Cria o elemento de áudio no JS
-    var audio = new Audio("audio/musica.mp3"); // Caminho do arquivo de áudio
+    // Adiciona a classe "loaded" ao body assim que a página terminar de carregar
+    document.body.classList.add("loaded");
 
-    // Inicia a reprodução da música automaticamente
+    // Código da música ou outras funcionalidades
+    var audio = new Audio("audio/musica.mp3");
     audio.play();
 
-    // Adiciona um evento de clique no botão "Clique para uma surpresa"
     document.getElementById("surpresa").addEventListener("click", function() {
-        // Quando o botão é clicado, a música é pausada ou tocada
         if (audio.paused) {
-            audio.play(); // Inicia a música
+            audio.play();
         } else {
-            audio.pause(); // Pausa a música
+            audio.pause();
         }
     });
 });
+

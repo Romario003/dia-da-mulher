@@ -150,3 +150,13 @@ html, body {
     background: none;
     border: none;
 }
+#surpresa {
+    visibility: hidden; /* Começa invisível */
+    opacity: 0; /* Começa com opacidade zero */
+    transition: visibility 0s, opacity 0.5s ease-in; /* Efeito de transição */
+}
+
+body.loaded #surpresa {
+    visibility: visible; /* Torna o botão visível quando a classe loaded é aplicada */
+    opacity: 1; /* Aumenta a opacidade para 100% */
+}

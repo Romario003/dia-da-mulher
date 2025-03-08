@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Lista de imagens (troque pelos caminhos corretos)
     let imagens = [
-        "rosa.png",
+        "girasol.png",
         "coracao.png",
         "heart.png",
         "flor.png"
